@@ -13,27 +13,14 @@ module {
 			switch (a) {
 				case (?aVal) {
 					switch (b) {
-						case (?bVal) {
-							if (equalFn(aVal, bVal)) {
-								true;
-							}
-							else {
-								false;
-							};
-						};
-						case (null) {
-							false;
-						};
+						case (?bVal) equalFn(aVal, bVal);
+						case (null) false;
 					};
 				};
 				case (null) {
 					switch (b) {
-						case (null) {
-							true;
-						};
-						case (_) {
-							false;
-						};
+						case (null) true;
+						case (_) false;
 					};
 				};
 			};
