@@ -1,26 +1,26 @@
-import Bool "mo:core/Bool";
+import Bool_ "mo:core/Bool";
 import {fail} "./utils";
 
 module {
 	public class ExpectBool(a : Bool) {
 		public func isTrue() {
 			if (a != true) {
-				fail(Bool.toText(a), "", Bool.toText(true));
+				fail(a.toText(), "", true.toText());
 			};
 		};
 		public func isFalse() {
 			if (a != false) {
-				fail(Bool.toText(a), "", Bool.toText(false));
+				fail(a.toText(), "", false.toText());
 			};
 		};
 		public func equal(b : Bool) {
 			if (a != b) {
-				fail(Bool.toText(a), "", Bool.toText(b));
+				fail(a.toText(), "", b.toText());
 			};
 		};
 		public func notEqual(b : Bool) {
 			if (a == b) {
-				fail(Bool.toText(a), "to be !=", Bool.toText(b));
+				fail(a.toText(), "to be !=", b.toText());
 			};
 		};
 	};
