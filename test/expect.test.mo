@@ -1,10 +1,9 @@
-import Debug "mo:core/Debug";
 import Nat "mo:core/Nat";
 import Blob "mo:core/Blob";
 import Principal "mo:core/Principal";
 import Result "mo:core/Result";
 import Error "mo:core/Error";
-import {test; suite; fail} "../src";
+import {test; fail} "../src";
 import {expect} "../src/async";
 
 test("bool", func() {
@@ -63,9 +62,7 @@ test("nat", func() {
 test("intX, natX", func() {
 	let myNat : Nat = 22;
 	let myNat8 : Nat8 = 33;
-	let myInt : Int = -44;
 	let myInt8 : Int8 = -44;
-	let myFloat : Float = 1.313;
 	expect.int(myNat).equal(22);
 	expect.nat8(myNat8).equal(33);
 	expect.nat(myNat).equal(22);

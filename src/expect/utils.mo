@@ -23,6 +23,6 @@ module {
 	};
 
 	public func bindCompare<T>(a : T, comp : (T, T) -> Bool, toText : (T) -> Text, condition : Text) : (T) -> () {
-		return func(b : T) = compare<T>(a, b, comp, toText, condition);
+		return func(b : T) = compare(a, b, comp, toText, condition);
 	};
 };

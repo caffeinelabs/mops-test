@@ -1,4 +1,3 @@
-import Option "mo:core/Option";
 import {fail} "./utils";
 
 module {
@@ -28,11 +27,13 @@ module {
 					};
 				};
 				case (null) {
-					if (Option.isNull(b)) {
-						true;
-					}
-					else {
-						false;
+					switch (b) {
+						case (null) {
+							true;
+						};
+						case (_) {
+							false;
+						};
 					};
 				};
 			};

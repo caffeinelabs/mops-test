@@ -3,11 +3,11 @@ import {bindCompare} "./utils";
 
 module {
 	public class ExpectNat(val : Nat) {
-		public let equal = bindCompare<Nat>(val, Nat.equal, Nat.toText, "");
-		public let notEqual = bindCompare<Nat>(val, Nat.notEqual, Nat.toText, "!=");
-		public let less = bindCompare<Nat>(val, Nat.less, Nat.toText, "<");
-		public let lessOrEqual = bindCompare<Nat>(val, Nat.lessOrEqual, Nat.toText, "<=");
-		public let greater = bindCompare<Nat>(val, Nat.greater, Nat.toText, ">");
-		public let greaterOrEqual = bindCompare<Nat>(val, Nat.greaterOrEqual, Nat.toText, ">=");
+		public let equal = bindCompare(val, Nat.equal, Nat.toText, "");
+		public let notEqual = bindCompare(val, Nat.notEqual, Nat.toText, "!=");
+		public let less = bindCompare(val, Nat.less, Nat.toText, "<");
+		public let lessOrEqual = bindCompare(val, Nat.lessOrEqual, Nat.toText, "<=");
+		public let greater = bindCompare(val, Nat.greater, Nat.toText, ">");
+		public let greaterOrEqual = bindCompare(val, Nat.greaterOrEqual, Nat.toText, ">=");
 	};
 };
