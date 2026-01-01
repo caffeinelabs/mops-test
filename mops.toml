@@ -2,7 +2,7 @@
 name = "test"
 version = "2.1.1"
 description = "Motoko testing library to run tests with mops"
-repository = "https://github.com/dfinity/mops-test"
+repository = "https://github.com/caffeinelabs/mops-test"
 keywords = [ "test", "testing", "unit", "suite", "expect", "matchers", "mops" ]
 license = "MIT"
 
