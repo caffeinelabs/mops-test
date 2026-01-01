@@ -1,0 +1,22 @@
+name: App build
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, ready_for_review, unlabeled]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - uses: caffeinelabs/setup-mops@v1
+
+      - name: Make sure moc is installed
+        run: mops toolchain bin moc || mops toolchain use moc latest
+
+      - name: Show mops version
+        run: mops -v
+
+      - name: Run mops test
+        run: mops test
