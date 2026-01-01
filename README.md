@@ -1,3 +1,6 @@
+[![mops](https://oknww-riaaa-aaaam-qaf6a-cai.raw.ic0.app/badge/mops/test)](https://mops.one/test)
+[![documentation](https://oknww-riaaa-aaaam-qaf6a-cai.raw.ic0.app/badge/documentation/test)](https://mops.one/test/docs)
+
 # Motoko Testing
 Easy way to write tests in Motoko and run them with [`mops test`](https://docs.mops.one/cli/mops-test).
 
