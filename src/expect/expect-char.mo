@@ -1,4 +1,4 @@
-import Char "mo:base/Char";
+import Char "mo:core/Char";
 import {bindCompare} "./utils";
 
 module {

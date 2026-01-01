@@ -1,9 +1,9 @@
-import Debug "mo:base/Debug";
-import Nat "mo:base/Nat";
-import Blob "mo:base/Blob";
-import Principal "mo:base/Principal";
-import Result "mo:base/Result";
-import Error "mo:base/Error";
+import Debug "mo:core/Debug";
+import Nat "mo:core/Nat";
+import Blob "mo:core/Blob";
+import Principal "mo:core/Principal";
+import Result "mo:core/Result";
+import Error "mo:core/Error";
 import {test; suite; expect; fail} "../src/async";
 
 await test("bool", func() : async () {

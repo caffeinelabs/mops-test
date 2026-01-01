@@ -1,4 +1,4 @@
-import Nat32 "mo:base/Nat32";
+import Nat32 "mo:core/Nat32";
 import {bindCompare} "./utils";
 
 module {

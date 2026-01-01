@@ -1,4 +1,4 @@
-import Debug "mo:base/Debug";
+import Debug "mo:core/Debug";
 import {expect = _expect; fail = _fail} "./expect";
 import {expectAsync = _expectAsync} "./expect/async";
 import {formatTestName} "./utils";

@@ -1,4 +1,4 @@
-import Blob "mo:base/Blob";
+import Blob "mo:core/Blob";
 import {bindCompare; fail} "./utils";
 
 module {

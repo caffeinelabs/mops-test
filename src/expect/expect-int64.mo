@@ -1,4 +1,4 @@
-import Int64 "mo:base/Int64";
+import Int64 "mo:core/Int64";
 import {bindCompare} "./utils";
 
 module {

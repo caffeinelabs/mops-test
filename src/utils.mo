@@ -1,8 +1,8 @@
-import Text "mo:base/Text";
+import Text "mo:core/Text";
 
 module {
 	public func formatTestName(text : Text) : Text {
-		Text.translate(text, func(c : Char) : Text {
+		Text.flatMap(text, func(c : Char) : Text {
 			if (c == '\n') {
 				"\\n"
 			}

@@ -1,4 +1,4 @@
-import Int16 "mo:base/Int16";
+import Int16 "mo:core/Int16";
 import {bindCompare} "./utils";
 
 module {

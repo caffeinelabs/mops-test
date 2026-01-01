@@ -1,4 +1,4 @@
-import Option "mo:base/Option";
+import Option "mo:core/Option";
 import {fail} "./utils";
 
 module {

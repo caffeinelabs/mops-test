@@ -1,4 +1,4 @@
-import Bool "mo:base/Bool";
+import Bool "mo:core/Bool";
 import {fail} "./utils";
 
 module {

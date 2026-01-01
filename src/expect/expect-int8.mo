@@ -1,4 +1,4 @@
-import Int8 "mo:base/Int8";
+import Int8 "mo:core/Int8";
 import {bindCompare} "./utils";
 
 module {

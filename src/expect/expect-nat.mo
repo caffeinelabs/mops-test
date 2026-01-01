@@ -1,4 +1,4 @@
-import Nat "mo:base/Nat";
+import Nat "mo:core/Nat";
 import {bindCompare} "./utils";
 
 module {

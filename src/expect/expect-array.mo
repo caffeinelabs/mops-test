@@ -1,5 +1,5 @@
-import Array "mo:base/Array";
-import Option "mo:base/Option";
+import Array "mo:core/Array";
+import Option "mo:core/Option";
 import {fail} "./utils";
 
 module {
