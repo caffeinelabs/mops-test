@@ -1,13 +1,14 @@
-import Text "mo:base/Text";
+import Char_ "mo:core/Char";
+import Text_ "mo:core/Text";
 
 module {
 	public func formatTestName(text : Text) : Text {
-		Text.translate(text, func(c : Char) : Text {
+		text.flatMap(func(c : Char) : Text {
 			if (c == '\n') {
 				"\\n"
 			}
 			else {
-				Text.fromChar(c);
+				c.toText();
 			}
 		});
 	};

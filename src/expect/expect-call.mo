@@ -1,5 +1,5 @@
-import Debug "mo:base/Debug";
-import Error "mo:base/Error";
+import Error "mo:core/Error";
+import Runtime "mo:core/Runtime";
 
 module {
 	public class ExpectCall(fn : () -> async ()) {
@@ -12,7 +12,7 @@ module {
 					return;
 				};
 			};
-			Debug.trap("expected to throw error");
+			Runtime.trap("expected to throw error");
 		};
 
 		// unable to catch

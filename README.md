@@ -1,3 +1,6 @@
+[![mops](https://oknww-riaaa-aaaam-qaf6a-cai.raw.ic0.app/badge/mops/test)](https://mops.one/test)
+[![documentation](https://oknww-riaaa-aaaam-qaf6a-cai.raw.ic0.app/badge/documentation/test)](https://mops.one/test/docs)
+
 # Motoko Testing
 Easy way to write tests in Motoko and run them with [`mops test`](https://docs.mops.one/cli/mops-test).
 
@@ -108,7 +111,7 @@ To run replica tests, your test file should look like this:
 ```motoko
 ...
 
-actor {
+persistent actor {
   public func runTests() : async () {
     // your tests here
   };
@@ -120,7 +123,7 @@ Example:
 import {test} "mo:test/async";
 import MyCanister "../my-canister";
 
-actor {
+persistent actor {
   // add cycles to deploy your canister
   ExperimentalCycles.add<system>(1_000_000_000_000);
 
@@ -136,7 +139,7 @@ actor {
 };
 ```
 
-Make sure your actor doesn't have a name `actor {`.
+Make sure your actor doesn't have a name, only `persistent actor {`.
 
 Make sure your actor has `runTests` method.
 

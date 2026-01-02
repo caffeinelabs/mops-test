@@ -1,4 +1,4 @@
-import Result "mo:base/Result";
+import Result "mo:core/Result";
 import {fail} "./utils";
 
 module {

@@ -1,10 +1,9 @@
-import Debug "mo:base/Debug";
-import Nat "mo:base/Nat";
-import Blob "mo:base/Blob";
-import Principal "mo:base/Principal";
-import Result "mo:base/Result";
-import Error "mo:base/Error";
-import {test; suite; expect; fail} "../src/async";
+import Nat "mo:core/Nat";
+import Blob "mo:core/Blob";
+import Principal "mo:core/Principal";
+import Result "mo:core/Result";
+import Error "mo:core/Error";
+import {test; expect; fail} "../src/async";
 
 await test("bool", func() : async () {
 	expect.bool(true).isTrue();
@@ -62,9 +61,7 @@ await test("nat", func() : async () {
 await test("intX, natX", func() : async () {
 	let myNat : Nat = 22;
 	let myNat8 : Nat8 = 33;
-	let myInt : Int = -44;
 	let myInt8 : Int8 = -44;
-	let myFloat : Float = 1.313;
 	expect.int(myNat).equal(22);
 	expect.nat8(myNat8).equal(33);
 	expect.nat(myNat).equal(22);

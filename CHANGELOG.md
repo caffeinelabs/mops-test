@@ -1,3 +1,9 @@
+# Mops-test changelog
+
+## Next
+
+- Migrate from base to core 2.0.0
+
 ## 2.1.1
 
 - Increase `expect.array` stringify limit from 100 to 20_000 chars

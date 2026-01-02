@@ -1,4 +1,3 @@
-import Debug "mo:base/Debug";
 import {suite; test} "../src/async";
 
 await suite("async suite", func() : async () {

@@ -1,4 +1,3 @@
-import Option "mo:base/Option";
 import {fail} "./utils";
 
 module {
@@ -14,25 +13,14 @@ module {
 			switch (a) {
 				case (?aVal) {
 					switch (b) {
-						case (?bVal) {
-							if (equalFn(aVal, bVal)) {
-								true;
-							}
-							else {
-								false;
-							};
-						};
-						case (null) {
-							false;
-						};
+						case (?bVal) equalFn(aVal, bVal);
+						case (null) false;
 					};
 				};
 				case (null) {
-					if (Option.isNull(b)) {
-						true;
-					}
-					else {
-						false;
+					switch (b) {
+						case (null) true;
+						case (_) false;
 					};
 				};
 			};

@@ -1,4 +1,3 @@
-import Debug "mo:base/Debug";
 import {test; testsys} "../src/async";
 
 func sys<system>() {};
