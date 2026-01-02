@@ -3,6 +3,9 @@ on:
   pull_request:
     types: [synchronize, opened, reopened, ready_for_review, unlabeled]
 
+env:
+  dfx_version: 0.30.2
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -11,6 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
       - uses: caffeinelabs/setup-mops@v1
+
+      - name: Install dfx
+        uses: dfinity/setup-dfx@main
+        with:
+          dfx-version: ${{ env.dfx_version }}
+
+      - name: Confirm dfx version
+        run: dfx --version
 
       - name: Make sure moc is installed
         run: mops toolchain bin moc || mops toolchain use moc latest
