@@ -1,6 +1,6 @@
 [package]
 name = "test"
-version = "2.1.1"
+version = "2.1.2"
 description = "Motoko testing library to run tests with mops"
 repository = "https://github.com/caffeinelabs/mops-test"
 keywords = [ "test", "testing", "unit", "suite", "expect", "matchers", "mops" ]
