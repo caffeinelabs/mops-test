@@ -1,6 +1,6 @@
 # Mops-test changelog
 
-## Next
+## 2.1.2
 
 - Migrate from base to core 2.0.0
 
